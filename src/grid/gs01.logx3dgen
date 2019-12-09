@@ -1,0 +1,12 @@
+read avs gs01-gridder.avs cmo                                                   
+dump tecplot gs01-gridder.plt cmo                                               
+cmo/printatt/cmo -all- minmax                                                   
+cmo status cmo                                                                  
+setsize                                                                         
+hextotet 6 cmo_tet cmo                                                          
+quality                                                                         
+dump avs gs01.avs cmo_tet/1 1 0                                                 
+dump tecplot gs01.plt cmo_tet                                                   
+dump fehm gs01 cmo_tet/binaryc//alternate_scalar/keepatt                        
+dump/stor/gs01-binc/cmo_tet/binaryc//alternate_scalar                           
+finish                                                                          

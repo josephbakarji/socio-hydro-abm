@@ -1,0 +1,8 @@
+site_name: Hybrid Social-Ecological Models
+docs_dir: 'docs/build/'
+theme: 'material'
+pages:
+- Introduction: index.md 
+- Functions: functions.md
+- Examples: examples.md
+

@@ -1,0 +1,20 @@
+3           (number of dimensions)
+1           (number of regions in axis x ====================================================================================================)
+497150      ()
+501750      (end coordinate for region 3, axis x)
+0           (number of divisions for region 3, axis x)
+100
+1           (type of spacing for region 1, axis x = 1 - equal; 2 - geometric spacing; 3 - logarithmic large to small; 4 - logarithmic small to large)
+1           (number of regions in axis y ================================================================================================)
+537350      ()
+540650      ()
+0           (number of divisions for region 3, axis y)
+100
+1           (type of spacing for region 1, axis y = 1 - equal; 2 - geometric spacing; 3 - logarithmic large to small; 4 - logarithmic small to large)
+1           (number of regions in axis z ================================================================================================)
+0           top model
+100         bot model
+6          (number of divisions in region 1, axis z)
+2           (type of spacing for region 1, axis y = 1 - equal; 2 - geometric spacing; 3 - logarithmic large to small; 4 - logarithmic small to large)
+0.855556    (factor of geometric spacing)
+1           (type of output = AVS format)

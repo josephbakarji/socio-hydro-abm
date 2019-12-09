@@ -1,0 +1,10 @@
+#!/bin/tcsh
+echo Gridder ...
+awk '{print $1}' $1.gridder-in | ./gridder
+mv -f grid.inp $1-gridder.avs
+# sed "s/gridname/$1/g" $1.gridname.lagrit-in >! $1.lagrit-in
+echo LaGriT ...
+# /home/tam/src/lagrit/bin/lagrit_lin_g < $1.lagrit-in
+./lagrit < $1.lagrit-in
+mv -f outx3dgen $1.outx3dgen
+mv -f logx3dgen $1.logx3dgen

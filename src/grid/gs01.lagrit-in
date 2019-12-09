@@ -1,0 +1,17 @@
+read avs gs01-gridder.avs cmo
+dump tecplot gs01-gridder.plt cmo
+# cmo/modatt//ndimensions_geom/default/2
+# cmo/modatt//ndimensions_topo/default/2
+# math/add/cmo/zic/1,0,0/cmo/zic/-1000
+cmo/printatt/cmo -all- minmax
+cmo status cmo
+setsize
+# filter/1,0,0/
+# connect/noadd
+hextotet 6 cmo_tet cmo
+quality
+dump avs gs01.avs cmo_tet / 1 1 0
+dump tecplot gs01.plt cmo_tet
+dump fehm gs01 cmo_tet / binaryc / / alternate_scalar / keepatt
+dump / stor / gs01-binc / cmo_tet / binaryc / / alternate_scalar
+finish

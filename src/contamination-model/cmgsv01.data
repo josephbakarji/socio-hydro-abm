@@ -1,0 +1,101 @@
+** Cr model
+cont
+avs 1 1e20
+geo
+liquid
+concentration
+head
+velocity
+material
+endavs
+head 1000
+nobr
+bous
+1
+airw
+3
+30.0 0.1
+zone
+file
+gs01_outside.zone
+flow
+-3 0 0 1798.613472817     1 1e10
+-5 0 0 1772.054959807     1 1e10
+
+pres
+1 0 0 1776 1 2
+
+zone
+110
+4.971500000E+05 501750          501750          4.971500000E+05 4.971500000E+05 501750          501750          4.971500000E+05
+5.373500000E+05 5.373500000E+05 5.406500000E+05 5.406500000E+05 5.373500000E+05 5.373500000E+05 5.406500000E+05 5.406500000E+05
+-1 -1 -1 -1 1 1 1 1
+
+flow
+-110 0 0 0.000717864089902394     1 0
+
+zonn
+file
+hole_coord-20120702-recharge-600p.zonn
+flow
+-9420 0 0 -0.0003413616876478    1 0
+-9620 0 0 -0.00007255554857619   1 0
+
+hyco
+1 0 0 -2.51795 -2.51795 -2.51795
+
+rock
+1 0 0 2500. 1010. 1.0E-02
+
+rlp
+1 0. 0. 1. 1. 0. 1.
+
+1 0 0 1
+
+ppor
+-1
+1 0 0 0.000215968
+
+stea
+shea 1e-6
+stim 1e20
+smul 1e10
+end
+time
+365.25 867 10000 001 2006 1 0
+0.0  -1.2 1.0 365.25
+
+ctrl
+-5 1e-6 1 350 bcgs
+1 0 0 2
+
+1.0 0 1.0
+10 1000 1e-8 1e20
+0 2
+sol
+1 -1
+iter
+1e-5 1e-5 0.1 1e-4 1.1
+13 0 0 5 1200.
+node
+1
+5471
+zone
+file
+gs01_outside.zone
+zonn
+file
+hole_coord-20140523-screen-change-100.zonn
+flxz
+1
+3612
+boun
+file
+cmgsv01.boun
+zonn
+file
+cmgsv01.source.zonn
+trac
+file
+cmgsv01.trac
+stop
